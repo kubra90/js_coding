@@ -35,3 +35,11 @@ function calculateMode(numbers){
     }
     return modes;
 }
+
+const numbers = [2,3,3,3,5,5,7,9];
+
+const mean = calculateMean(numbers);
+console.log(`mean: ${mean}`);
+
+const mode = calculateMode(numbers);
+console.log(`mode: ${mode}`);
