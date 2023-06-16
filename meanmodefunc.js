@@ -25,4 +25,13 @@ function calculateMode(numbers){
 
     //bc of there can be more than one number that can have maxFrequency, let's do
     //an array to store the values.
+
+    const modes =[];
+    for(const number in frequencyMap){
+        if(frequencyMap[number] === maxFrequency){
+            //number saved as 'string', therefore you should use parseInt to convert string to int. 
+            modes.push(parseInt(number));
+        }
+    }
+    return modes;
 }
